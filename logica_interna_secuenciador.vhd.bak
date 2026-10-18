@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity logica_interna_secuenciador is
+
+Port (
+	-- Entradas
+	cc: in STD_LOGIC;
+	instr: in STD_LOGIC_VECTOR (1 downto 0);
+	-- Salidas
+	sel_mux: out STD_LOGIC;
+	PL: out STD_LOGIC;
+	MAP: out STD_LOGIC;
+	VECT: out STD_LOGIC;
+);
+
+end logica_interna_secuenciador;
+
+architecture Behavioral of logica_interna_secuenciador is
+
+begin 
+process(cc,instr)
+case instr is
