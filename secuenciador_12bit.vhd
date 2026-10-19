@@ -37,3 +37,28 @@ begin
 		); 
 			
 	-- 3\. Instanciación del Incrementador
+	INC_12 : entity work.incrementer_12bit 
+		port map ( 
+			input_val => wire_uPC_pres, -- Lee la dirección actual Y 
+			output_val => wire_uPC_inc -- Entrega Y + 1 
+		);
+		
+	-- 4\. Instanciación del Multiplexor 2 a 1 
+	MUX_12 : entity work.mux2a1_12bit 
+		port map ( 
+			registromPC => wire_uPC_inc, -- Entrada '0': Dirección incrementada 
+			D => D_salto, -- Entrada '1': Dirección de salto 
+			sel => wire_sel_mux, -- Selección que viene de la Lógica Interna 
+			output => wire_next_addr -- Salida hacia la entrada del Registro 
+		);
+	-- 5\. Instanciación de la Lógica Interna 
+	LOG_INT : entity work.logica_interna_secuenciador
+		port map ( 
+				cc => cc, 
+				instr => instr, 
+				sel_mux => wire_sel_mux, 
+				PL => PL, 
+				MAPP => MAPP, 
+				VECT => VECT 
+			); 
+	end Structural;
