@@ -1,0 +1,35 @@
+library IEEE; 
+use IEEE.STD_LOGIC_1164.ALL; 
+
+entity selector_fuentes_D is 
+	Port ( 
+		-- Entradas de datos de 12 bits 
+		Liga: in STD_LOGIC_VECTOR (11 downto 0); 
+		Am: in STD_LOGIC_VECTOR (11 downto 0); 
+		Av : in STD_LOGIC_VECTOR (11 downto 0); 
+
+		-- Entradas de control (activas en bajo '0' desde la Lógica Interna) 
+		PL : in STD_LOGIC; 
+		MAPP : in STD_LOGIC; 
+		VECT : in STD_LOGIC; 
+
+		-- Salida de 12 bits hacia la entrada D del secuenciador 
+		D_salto : out STD_LOGIC_VECTOR (11 downto 0) 
+	); 
+end selector_fuentes_D; 
+
+architecture Behavioral of selector_fuentes_D is 
+begin 
+	process(Liga, Am, Av, PL, MAPP, VECT) 
+	begin 
+		if PL = '0' then 
+			D_salto <= Liga; 
+		elsif MAPP = '0' then 
+			D_salto <= Am; 
+		elsif VECT = '0' then 
+			D_salto <= Av; 
+		else 
+			D_salto <= (others =>'0'); -- Valor por defecto 
+		end if; 
+	end process; 
+end Behavioral
