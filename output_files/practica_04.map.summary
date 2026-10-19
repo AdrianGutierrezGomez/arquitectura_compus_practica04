@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Sun Oct 18 15:27:27 2026
+Analysis & Synthesis Status : Successful - Sun Oct 18 23:24:52 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : practica_04
 Top-level Entity Name : practica_04
 Family : Cyclone IV E
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 70
+    Total combinational functions : 69
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

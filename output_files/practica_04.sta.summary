@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'reloj_in'
+Slack : -2.275
+TNS   : -36.022
+
+Type  : Slow 1200mV 85C Model Setup 'divider:inst_divisor|cuenta[25]'
+Slack : -1.485
+TNS   : -11.918
+
+Type  : Slow 1200mV 85C Model Hold 'reloj_in'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divider:inst_divisor|cuenta[25]'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reloj_in'
+Slack : -3.000
+TNS   : -33.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divider:inst_divisor|cuenta[25]'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Slow 1200mV 0C Model Setup 'reloj_in'
+Slack : -1.874
+TNS   : -28.332
+
+Type  : Slow 1200mV 0C Model Setup 'divider:inst_divisor|cuenta[25]'
+Slack : -1.237
+TNS   : -8.802
+
+Type  : Slow 1200mV 0C Model Hold 'reloj_in'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divider:inst_divisor|cuenta[25]'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reloj_in'
+Slack : -3.000
+TNS   : -33.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divider:inst_divisor|cuenta[25]'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Fast 1200mV 0C Model Setup 'reloj_in'
+Slack : -0.888
+TNS   : -8.725
+
+Type  : Fast 1200mV 0C Model Setup 'divider:inst_divisor|cuenta[25]'
+Slack : -0.376
+TNS   : -0.947
+
+Type  : Fast 1200mV 0C Model Hold 'reloj_in'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divider:inst_divisor|cuenta[25]'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reloj_in'
+Slack : -3.000
+TNS   : -34.747
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divider:inst_divisor|cuenta[25]'
+Slack : -1.000
+TNS   : -16.000
+
+------------------------------------------------------------
