@@ -1,6 +1,6 @@
 |practica_04
 reloj <= sensa_boton:inst_sensa_boton.reloj
-boton => sensa_boton:inst_sensa_boton.boton
+boton => inst.IN0
 reloj_in => sensa_boton:inst_sensa_boton.clk
 reloj_in => divider:inst_divisor.reloj
 div_clk <= divider:inst_divisor.div_clk
@@ -8,7 +8,7 @@ LED_ESTADO[0] <= Y[0].DB_MAX_OUTPUT_PORT_TYPE
 LED_ESTADO[1] <= Y[1].DB_MAX_OUTPUT_PORT_TYPE
 LED_ESTADO[2] <= Y[2].DB_MAX_OUTPUT_PORT_TYPE
 LED_ESTADO[3] <= Y[3].DB_MAX_OUTPUT_PORT_TYPE
-RESET => secuenciador_12bit:inst_secuenciador.reset
+RESET => inst11.IN0
 Qx => logica_seleccion:inst_logica_seleccion.Qx
 X => logica_seleccion:inst_logica_seleccion.X
 Y_flag => logica_seleccion:inst_logica_seleccion.Y_flag
